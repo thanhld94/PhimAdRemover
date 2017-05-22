@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Phimmoi flash advertisement overlay remover",
+  "version": "0.1",
+  "description": "Remove the flash overlay when the video player starts",
+
+  "content_scripts": [{
+    "js": ["js/content.js"],
+    "matches": ["http://www.phimmoi.net/*"]
+  }],
+  "web_accessible_resources": ["js/adRemover.js"]
+}
+
