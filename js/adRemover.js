@@ -1,6 +1,6 @@
 window.addEventListener("load", removeAd);
 
-episodes = document.querySelectorAll(".episode > a");
+var episodes = document.querySelectorAll(".episode > a");
 episodes.forEach(function(episode) {
   episode.addEventListener("click", removeAd);
 });
@@ -10,6 +10,6 @@ function removeAd() {
   try {
     document.querySelector("#preroll-overlay").remove();
   } catch (error) {
-    console.log("Some error!");
+    console.log("No preroll-overlay element");
   }
 }
